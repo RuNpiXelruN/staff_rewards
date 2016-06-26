@@ -1,4 +1,11 @@
 <h1>Hi <%= @user.first_name %>!</h1>
 
-<%= render partial: 'comments/form', locals: {user: @user} %>
-<%= render @comments %>
+<div class="row">
+  <div class="col-md-4 well" style="min-height: 100vh">
+    <h3 class="page-header">Leaderboard</h3>
+  </div>
+  <div class="col-md-7 col-md-offset-1">
+    <%= render partial: 'comments/form', locals: {user: @user} %>
+    <%= render @comments %>
+  </div>
+</div>
