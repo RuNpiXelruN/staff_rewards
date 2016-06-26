@@ -1,0 +1,6 @@
+<div class="page-header">
+  <%= form_for [user, Comment.new] do |f| %>
+    <p><%= f.text_area :body, placeholder: "Enter your message..." %></p>
+    <%= f.submit %>
+  <% end %>
+</div>

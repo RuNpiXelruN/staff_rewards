@@ -1,0 +1,4 @@
+<div class="well">
+  <p><%= comment.body %></p>
+  <p>posted by <%= comment.user.first_name %>, <%= time_ago_in_words(comment.created_at) + ' ago' %></p>
+</div>
